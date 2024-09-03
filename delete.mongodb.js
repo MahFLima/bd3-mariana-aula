@@ -8,5 +8,4 @@ const collection = "LIVRARIA";
 use(database);
 
 /* Seleciona todos os registros da seleção */
-db[collection].find({autor: "Jonh Ronald Reuel Tolkien"})
-
+db[collection].deleteOne({codigo: '9'})

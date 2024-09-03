@@ -8,4 +8,7 @@ const collection = "LIVRARIA";
 use(database);
 
 /* Altera os dados de um documentos */
-db[collection].updateOne()
+db[collection].updateOne(
+  {titulo: "As Cavernas de Aço"},
+  {$set: {valor:'250'}}
+)

@@ -7,6 +7,8 @@ const collection = "LIVRARIA";
 /* CRIAR OU ACESSAR O BANCO DE DADOS */
 use(database);
 
-/* Seleciona todos os registros da seleção */
-db[collection].find({autor: "Jonh Ronald Reuel Tolkien"})
-
+/* Altera os dados de um documentos */
+db[collection].updateMany(
+  {autor: "J.R.R Tolkien",},
+  {$set: {autor: "Jonh Ronald Reuel Tolkien",}}
+)
